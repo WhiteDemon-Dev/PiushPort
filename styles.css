@@ -1,0 +1,441 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.port{
+    color:black;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    font-family: 'League-Spartan' , sans-serif;
+}
+.nav-elem{
+    display:flex;
+    list-style: none;
+    gap:2rem;
+}
+.nav-elem li a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-elem li a:hover{
+    color:bisque;
+
+}
+
+#welcome{
+    background: url("background-welc.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+
+}
+.header{
+    font-size: 80px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    color:antiquewhite;
+}
+.welcpara{
+    color:antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 70px;
+
+}
+.img-o img{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    height: 400px; ;
+    padding-left:20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255,0.2);
+}
+
+#about{
+    background: url("About.jpeg");
+    background: url("background-welc.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+.About_me{
+    font-size: 80px;
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    color:antiquewhite;
+    padding-top: 25px;
+   
+
+}
+.a_box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    background: rgba( 0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba( 255,255,255, 0.1);
+    padding: 2rem;
+    max-width: 1300px;
+    margin:auto;
+    align-items: center;
+    margin-top: 20px;
+    text-indent:2em;
+
+}
+.para{
+    color:antiquewhite;
+    flex:1;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 1 rem;
+    font-family : 'poppins',sans-serif;
+}
+#skills{
+    background:url("skill.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    flex-direction:column;
+    display: flex;
+
+}
+.skills-intro{
+    font-size: 80px;
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    color:antiquewhite;
+    padding-top: 25px;
+}
+.skills-para{
+    font-family : 'poppins',sans-serif;
+    color:antiquewhite;
+    flex:1;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 2rem;
+
+}
+
+.skill{
+    margin-bottom: 1.5rem;
+    width:100%;
+
+}
+
+.skill span{
+    display:block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color:antiquewhite;
+    text-align:center;
+}
+.skill-bar{
+    background-color:#ddd;
+    height:20px;
+    border-radius: 10px;
+    overflow:hidden;
+   
+    
+   
+}
+
+.skill-level{
+    background-color: #7badd8;
+    height:100%;
+    color:#FFF;
+    text-align:right;
+    padding-right: 8px;
+    font-size: 0.9rem;
+    border-radius: 10px 0 0 10px;
+    line-height: 20px;
+    transition: width 1s ease;
+}
+.skill-container{
+    max-width:700px;
+    width:90%;
+}
+
+#certifications{
+    background: url("cert.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    display:flex;
+}
+
+.certi-intro{
+    color:black;
+    font-family: 'League-Spartan', sans-serif;
+    margin-bottom:1.5rem;
+    font-size: 3rem;
+}
+
+.certi{
+    display:flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #00b894 #333;
+    padding:100px;
+
+}
+
+.certi::-webkit-scrollbar{
+    height:8px;
+}
+.certi::-webkit-scrollbar-thumb{
+    background-color: #00b894;
+    border-radius: 10px;
+}
+
+.certi img{
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    padding-left: 100px;
+}
+
+.certi img:hover{
+    transform: scale(1.05s);
+}
+
+#contact{
+    background: url("cont.jpeg");
+    background: url("background-welc.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+.head{
+    color:antiquewhite;
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom:1rem;
+    font-size:80px;
+    padding-top:100px;
+}
+
+.contcont{
+    color:antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size:40px;
+    margin-bottom: 2rem;
+    padding-top:100px;
+    text-align:center;
+
+}
+.form input, .form textarea{
+    padding: 0.8rem;
+    border:#ffffff;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+.form button{
+    background-color: gold;
+    color: white;
+    padding:0.8rem;
+    font-size:1 rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+.form button:hover{
+    background-color: #019170;
+
+
+}
+.cont{
+    background-color: #333;
+    opacity: 0.4;
+    font-family:"League-spartan" , sans-serif;
+    text-align:center;
+    padding-bottom: 20px;
+    font-family: 800;
+
+}
+
+.cont a{
+    color:azure;
+    text-decoration: none;
+    margin: 0 0.5rem;
+   
+
+
+}
+.cont a:hover{
+    text-decoration: underline;
+
+}
+.below{
+    text-align:center;
+    color:antiquewhite;
+    padding-top:20px;
+}
+/* Existing styles above */
+
+/* ========== MEDIA QUERIES FOR RESPONSIVENESS ========== */
+
+/* Small phones: max-width 480px */
+@media (max-width: 480px) {
+    .skills-intro,
+    .head,
+    .About_me {
+      font-size: 2rem;
+    }
+  
+    .contcont {
+      font-size: 1.2rem;
+    }
+  
+    .certi img {
+      padding-left: 10px;
+      height: 150px;
+    }
+  
+    .certi {
+      padding: 1rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .nav-elem {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .a_box {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .para {
+      font-size: 1rem;
+      padding: 1rem 0;
+    }
+  
+    .form input,
+    .form textarea {
+      width: 100%;
+      transition: background 0.3s;
+    }
+  
+    .form {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  
+    .skill-container {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  
+  /* Tablets: max-width 768px */
+  @media (max-width: 768px) {
+    .skills-intro,
+    .head,
+    .About_me {
+      font-size: 3rem;
+    }
+  
+    .nav-elem {
+      gap: 1rem;
+    }
+  
+    .certi img {
+      height: 180px;
+      padding-left: 20px;
+    }
+  
+    .a_box {
+      flex-direction: column;
+    }
+  
+    .form input,
+    .form textarea {
+      width: 100%;
+      transition: background 0.3s;
+    }
+  
+    .skill {
+      width: 100%;
+    }
+  
+    .skill-container {
+      width: 95%;
+    }
+  }
+  
+  /* General Responsive Defaults */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
